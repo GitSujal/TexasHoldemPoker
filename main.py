@@ -69,7 +69,12 @@ def make_the_winner(players_csv_file, first_three_community_cards, the_winner):
     """
     This function will take in a players_csv_file, 
     a list of first_three_community_cards, and the winner.
-    It will return a list of the players and their winnings.
+    It will the return the two cards that needs to be drawn from the deck
+    to make sure the designated winner wins the game.
+    Arguments:
+        players_csv_file: a csv file with players and their hands.
+        first_three_community_cards: a list of the first three community cards.
+        the_winner: the winner of the game.
     """
 
     # Open the players_csv_file and read the lines.
@@ -129,7 +134,7 @@ def make_the_winner(players_csv_file, first_three_community_cards, the_winner):
 
 def main():
     two_cards = make_the_winner('players.csv', ['S2', 'C9', 'C4'], 'utur')
-    #print(two_cards)
+    print(two_cards)
 
 if __name__ == "__main__":
     main()
