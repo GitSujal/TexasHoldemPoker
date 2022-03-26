@@ -1,12 +1,16 @@
 
 class Card(object):
+    """
+    Class definition for a hand of cards.
+    
+    """
 
     suit_dict = {
         "C": "\u2663",
         "D": "\u2666",
         "H": "\u2665",
         "S": "\u2660"
-        }
+    }
 
     rank_dict = {
         "A": 14,
@@ -25,14 +29,18 @@ class Card(object):
     }
 
     def __init__(self, suit, rank):
+        """
+        This function will take in a suit and rank
+        and create a card object.
+        """
         self.rank_string = rank
         self.suit = self.suit_dict[suit.upper()]
         self.rank = self.rank_dict[rank.upper()]
         self.suit_string = suit.upper()
 
     def __str__(self):
-        return str(self.rank_string)  + self.suit_string
-    
+        return str(self.rank_string) + self.suit_string
+
     def __repr__(self):
         return str(self.rank_string) + self.suit_string
 
@@ -49,7 +57,7 @@ class Card(object):
             return True
         else:
             return False
-    
+
     def __eq__(self, __o: object) -> bool:
         if self.rank == __o.rank and self.suit == __o.suit:
             return True
@@ -63,7 +71,7 @@ class Card(object):
             return True
         else:
             return False
-    
+
     def __gt__(self, __o: object) -> bool:
         if self.rank > __o.rank:
             return True
@@ -71,7 +79,7 @@ class Card(object):
             return True
         else:
             return False
-    
+
     def __ne__(self, __o: object) -> bool:
         if self.rank != __o.rank or self.suit != __o.suit:
             return True
