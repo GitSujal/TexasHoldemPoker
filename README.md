@@ -18,3 +18,8 @@ Run the main program to see the required two cards to make the selected winner.
 ```
 python main.py
 ```
+
+## More about Texas Holde'm Poker
+[Texas Holde'm Wikipedia](https://en.wikipedia.org/wiki/Texas_hold_%27em)
+
+
