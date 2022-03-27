@@ -175,7 +175,7 @@ class TexasPokerHand():
         Returns:
             str: The string representation of the hand.
         """
-        return_string = "{0:50}|{1:20}|{2:10}".format(
+        return_string = "{0:30}|{1:20}|{2:10}".format(
             str(self.cards), self.hand_type, self.hand_ranking)
         return return_string
 

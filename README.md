@@ -23,3 +23,4 @@ python main.py
 [Texas Holde'm Wikipedia](https://en.wikipedia.org/wiki/Texas_hold_%27em)
 
 
+## Use the Texas Hold'em Poker Analysis Jupyter notebook to evaluate the solution and do more analysis
